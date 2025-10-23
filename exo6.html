@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 06 - Formulaire Contact</title>
+</head>
+<body>
+    <h1>Formulaire de contact</h1>
+
+    <form action="#" method="post">
+        <!-- Champ Nom -->
+        <p>
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required>
+        </p>
+
+        <!-- Champ Email -->
+        <p>
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <!-- Champ Sujet -->
+        <p>
+            <label for="sujet">Sujet :</label><br>
+            <input type="text" id="sujet" name="sujet" maxlength="60">
+        </p>
+
+        <!-- Champ Message -->
+        <p>
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" minlength="50" placeholder="Votre message (au moins 50 caractères)..."></textarea>
+        </p>
+
+        <!-- Bouton d’envoi -->
+        <p>
+            <button type="submit">Envoyer</button>
+        </p>
+    </form>
+</body>
+</html>

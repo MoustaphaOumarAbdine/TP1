@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 09 - Accessibilité & Médias</title>
+</head>
+<body>
+    <!-- Lien pour accéder directement au contenu principal -->
+    <a href="#main" accesskey="c">Aller au contenu</a>
+
+    <!-- Header / Navigation exemple -->
+    <header>
+        <h1>Page d'exemple multimédia</h1>
+        <nav>
+            <ul>
+                <li><a href="#main">Contenu principal</a></li>
+                <li><a href="#aside">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+        <h2>Illustration</h2>
+
+        <!-- Image avec figure et figcaption -->
+        <figure>
+            <img src="img/illustration.png" alt="Exemple d'illustration" width="300">
+            <figcaption>Exemple d’illustration pour le contenu du site.</figcaption>
+        </figure>
+
+        <!-- Extrait audio -->
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="audio/extrait.mp3" type="audio/mpeg">
+            Audio non disponible
+        </audio>
+
+        <!-- Exemple de contenu interactif accessible au clavier -->
+        <h2>Liens utiles</h2>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><button type="button" onclick="alert('Bouton cliqué !')">Cliquez ici</button></li>
+        </ul>
+    </main>
+
+    <!-- Aside -->
+    <aside id="aside">
+        <h3>À propos</h3>
+        <p>Ce site illustre l’insertion de médias et l’accessibilité en HTML5.</p>
+    </aside>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2025 Exemple site - Mentions légales</p>
+    </footer>
+</body>
+</html>

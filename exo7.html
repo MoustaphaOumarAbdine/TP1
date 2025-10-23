@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 07 - Formulaire d'inscription avancé</title>
+</head>
+<body>
+    <h1>Créer un compte</h1>
+
+    <form action="#" method="post">
+        <!-- Identité -->
+        <fieldset>
+            <legend>Identité</legend>
+
+            <p>
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required>
+            </p>
+
+            <p>
+                <label for="prenom">Prénom :</label><br>
+                <input type="text" id="prenom" name="prenom" required>
+            </p>
+
+            <p>
+                <label for="naissance">Date de naissance :</label><br>
+                <input type="date" id="naissance" name="naissance" min="1900-01-01" max="" required>
+            </p>
+        </fieldset>
+
+        <!-- Contact -->
+        <fieldset>
+            <legend>Contact</legend>
+
+            <p>
+                <label for="tel">Téléphone :</label><br>
+                <input type="tel" id="tel" name="tel" 
+                       pattern="^0[5-7]\d{8}$"
+                       title="Le numéro doit commencer par 05, 06 ou 07 et contenir 10 chiffres."
+                       placeholder="ex : 0612345678" required>
+            </p>
+
+            <p>
+                <label for="site">Site personnel :</label><br>
+                <input type="url" id="site" name="site" placeholder="https://monsite.com">
+            </p>
+        </fieldset>
+
+        <!-- Sécurité -->
+        <fieldset>
+            <legend>Sécurité</legend>
+
+            <p>
+                <label for="password">Mot de passe :</label><br>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </p>
+
+            <p>
+                <label for="confirm">Confirmation du mot de passe :</label><br>
+                <input type="password" id="confirm" name="confirm" minlength="8" required>
+            </p>
+        </fieldset>
+
+        <!-- Préférences -->
+        <fieldset>
+            <legend>Préférences</legend>
+
+            <p>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Recevoir la newsletter</label>
+            </p>
+
+            <p>Rôle :</p>
+            <p>
+                <input type="radio" id="etudiant" name="role" value="etudiant" required>
+                <label for="etudiant">Étudiant</label><br>
+
+                <input type="radio" id="pro" name="role" value="pro">
+                <label for="pro">Professionnel</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Créer le compte</button>
+        </p>
+    </form>
+</body>
+</html>
